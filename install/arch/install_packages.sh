@@ -4,7 +4,7 @@
 
 installer_packages=(
     "hyprland"
-    "hyprpanel-git"
+    "hyprpanel"
     "rofi-wayland"
     "alacritty"
     "dunst"
