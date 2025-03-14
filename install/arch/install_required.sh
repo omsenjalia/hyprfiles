@@ -10,7 +10,7 @@ installer_packages=(
     "figlet"
     "git"
     "hyprland"
-    "hyprpanel"
+    "ags-hyprpanel-git"
     "rofi-wayland"
     "alacritty"
     "dunst"
