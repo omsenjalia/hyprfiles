@@ -4,7 +4,7 @@
 
 installer_packages=(
     "hyprland"
-    "waybar"
+    "hyprpanel-git"
     "rofi-wayland"
     "alacritty"
     "dunst"
@@ -14,7 +14,7 @@ installer_packages=(
     "qt6-wayland"
     "hyprpaper"
     "hyprlock"
-    "firefox"
+    "librewolf"
     "ttf-font-awesome"
     "vim"
     "fastfetch"
