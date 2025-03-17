@@ -189,15 +189,6 @@ if [ ! -d ~/Downloads ] ;then
     echo ":: Downloads folder created"
 fi
 
-# Change into Downloads directory
-cd ~/Downloads
-
-# Remove existing folder
-if [ -d ~/Downloads/hyprfiles ] ;then
-    rm -rf ~/Downloads/hyprfiles
-    echo ":: Existing installation folder removed"
-fi
-
 # Clone the packages
 git clone --depth 1 https://github.com/omsenjalia/hyprfiles.git
 echo ":: Installation files cloned into Downloads folder"
