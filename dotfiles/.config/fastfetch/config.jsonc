@@ -23,19 +23,19 @@
     },
     {
       "type": "os",
-      "key": "{#separator}│  {#keys}󰍹 OS: {os}"
+      "key": "{#separator}│  {#keys}󰍹 OS:"
     },
     {
       "type": "kernel",
-      "key": "{#separator}│  {#keys}󰒋 Kernel: {kernel}"
+      "key": "{#separator}│  {#keys}󰒋 Kernel:"
     },
     {
       "type": "uptime",
-      "key": "{#separator}│  {#keys}󰅐 Uptime: {uptime}"
+      "key": "{#separator}│  {#keys}󰅐 Uptime:"
     },
     {
       "type": "packages",
-      "key": "{#separator}│  {#keys}󰏖 Packages: {packages}"
+      "key": "{#separator}│  {#keys}󰏖 Packages:"
     },
     {
       "type": "custom",
@@ -48,27 +48,27 @@
     },
     {
       "type": "de",
-      "key": "{#separator}│  {#keys}󰧨 DE: {de}"
+      "key": "{#separator}│  {#keys}󰧨 DE:"
     },
     {
       "type": "wm",
-      "key": "{#separator}│  {#keys}󱂬 WM: {wm}"
+      "key": "{#separator}│  {#keys}󱂬 WM:"
     },
     {
       "type": "wmtheme",
-      "key": "{#separator}│  {#keys}󰉼 Theme: {wmtheme}"
+      "key": "{#separator}│  {#keys}󰉼 Theme:"
     },
     {
       "type": "display",
-      "key": "{#separator}│  {#keys}󰹑 Resolution: {resolution}"
+      "key": "{#separator}│  {#keys}󰹑 Resolution:"
     },
     {
       "type": "shell",
-      "key": "{#separator}│  {#keys}󰞷 Shell: {shell}"
+      "key": "{#separator}│  {#keys}󰞷 Shell:"
     },
     {
       "type": "terminalfont",
-      "key": "{#separator}│  {#keys}󰛖 Font: {terminalfont}"
+      "key": "{#separator}│  {#keys}󰛖 Font:"
     },
     {
       "type": "custom",
@@ -81,19 +81,19 @@
     },
     {
       "type": "cpu",
-      "key": "{#separator}│  {#keys}󰻠 CPU: {cpu}"
+      "key": "{#separator}│  {#keys}󰻠 CPU:"
     },
     {
       "type": "gpu",
-      "key": "{#separator}│  {#keys}󰢮 GPU: {gpu}"
+      "key": "{#separator}│  {#keys}󰢮 GPU: "
     },
     {
       "type": "memory",
-      "key": "{#separator}│  {#keys}󰍛 Memory: {memory}"
+      "key": "{#separator}│  {#keys}󰍛 Memory:"
     },
     {
       "type": "disk",
-      "key": "{#separator}│  {#keys}󰋊 Disk (/): {disk}"
+      "key": "{#separator}│  {#keys}󰋊 Disk (/): "
     },
     {
       "type": "custom",
@@ -102,7 +102,7 @@
     // Colors
     {
       "type": "colors",
-      "key": "{#separator}│  {#keys}⚫ Colors: {colors}",
+      "key": "{#separator}│  {#keys}⚫ Colors:",
       "symbol": "circle"
     },
     // Footer
