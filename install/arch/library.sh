@@ -25,7 +25,7 @@ _installPackages() {
         return;
     fi;
     printf "Package not installed:\n%s\n" "${toInstall[@]}";
-    sudo pacman --noconfirm -S "${toInstall[@]}";
+     yay --noconfirm -S "${toInstall[@]}";
 }
 
 _installPackagesYay() {
