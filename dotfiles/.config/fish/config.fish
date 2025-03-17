@@ -3,30 +3,12 @@ if not status --is-interactive
     return
 end
 
-# Load starship prompt if starship is installed
-if test -x /usr/bin/starship
-    function __main
-        set major (version bash | cut -d. -f1)
-        set minor (version bash | cut -d. -f2)
-
-        if test $major -gt 4 -o \( test $major -eq 4 -a $minor -ge 1 \)
-            source ("/usr/bin/starship" init bash --print-full-init)
-        else
-            source /dev/stdin <<< ("/usr/bin/starship" init bash --print-full-init)
-        end
-    end
-    __main
-    functions -e __main
-end
-
 # Advanced command-not-found hook
 if test -f /usr/share/doc/find-the-command/ftc.bash
-    source /usr/share/doc/find-the-command/ftc.bash
+    bash /usr/share/doc/find-the-command/ftc.bash
 end
 
-## Useful aliases
-
-# Replace ls with eza
+# Useful aliases
 if test -x /usr/bin/eza
     alias ls 'eza -al --color=always --group-directories-first --icons'     # preferred listing
     alias la 'eza -a --color=always --group-directories-first --icons'      # all files and dirs
@@ -38,10 +20,6 @@ end
 # Replace some more things with better alternatives
 if test -x /usr/bin/bat
     alias cat 'bat --style header --style snip --style changes --style header'
-end
-
-if not test -x /usr/bin/yay -a -x /usr/bin/paru
-    alias yay 'paru'
 end
 
 # Common use
