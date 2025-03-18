@@ -13,7 +13,6 @@ installer_packages=(
     "ags-hyprpanel-git"
     "rofi-wayland"
     "alacritty"
-    "dunst"
     "thunar"
     "xdg-desktop-portal-hyprland"
     "qt6-wayland"
