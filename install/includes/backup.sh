@@ -1,10 +1,11 @@
 backup_files=(
     ".config/alacritty"
-    ".config/dunst"
     ".config/hypr"
     ".config/ml4w"
     ".config/rofi"
-    ".config/waybar"
+    ".config/fastfetch"
+    ".config/fish"
+    ".config/hyprpanel"
     ".config/wlogout"
     ".bashrc"
 )
