@@ -76,6 +76,8 @@ installer_packages=(
 
 ## To enable matugen based color theming and setting wallpapers
     "swww"
+    "pywal"
+    "python-pywalfox"
 )
 
 echo ":: Installing on $distro"
