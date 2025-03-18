@@ -83,6 +83,11 @@ source install/includes/kvm.sh
 source install/includes/copy.sh
 
 # ----------------------------------------------------- 
+# Add Wallpapers
+# ----------------------------------------------------- 
+source install/includes/getwalls.sh
+
+# ----------------------------------------------------- 
 # Reboot
 # ----------------------------------------------------- 
 source install/includes/reboot.sh
