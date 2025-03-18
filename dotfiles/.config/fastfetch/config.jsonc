@@ -1,114 +1,118 @@
 {
   "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
-  "logo": {
-    "padding": {
-      "top": 2,
-      "left": 1,
-      "right": 2
-    }
-  },
+#  "logo": {
+#    "type": "kitty",
+#    "source": "/usr/share/icons/garuda/mokka-fastfetch.png",
+#    "width": 40
+#  },
   "display": {
-    "separator": "  "
+    "separator": " "
   },
   "modules": [
-    // Title
     {
       "type": "title",
-      "format": "{#1}╭───────────── {#}{user-name-colored} ─────────────╮"
-    },
-    // System Information
-    {
-      "type": "custom",
-      "format": "{#1}│ {#}System Information"
+      "keyWidth": 10
     },
     {
       "type": "os",
-      "key": "{#separator}│  {#keys}󰍹 OS:"
+      "key": " OS",
+      "keyColor": "yellow"
     },
     {
       "type": "kernel",
-      "key": "{#separator}│  {#keys}󰒋 Kernel:"
-    },
-    {
-      "type": "uptime",
-      "key": "{#separator}│  {#keys}󰅐 Uptime:"
+      "key": "├ Kernel",
+      "keyColor": "yellow"
     },
     {
       "type": "packages",
-      "key": "{#separator}│  {#keys}󰏖 Packages:"
-    },
-    {
-      "type": "custom",
-      "format": "{#1}│"
-    },
-    // Desktop Environment
-    {
-      "type": "custom",
-      "format": "{#1}│ {#}Desktop Environment"
-    },
-    {
-      "type": "de",
-      "key": "{#separator}│  {#keys}󰧨 DE:"
-    },
-    {
-      "type": "wm",
-      "key": "{#separator}│  {#keys}󱂬 WM:"
-    },
-    {
-      "type": "wmtheme",
-      "key": "{#separator}│  {#keys}󰉼 Theme:"
-    },
-    {
-      "type": "display",
-      "key": "{#separator}│  {#keys}󰹑 Resolution:"
+      "key": "├󰏖 Packages",
+      "keyColor": "yellow"
     },
     {
       "type": "shell",
-      "key": "{#separator}│  {#keys}󰞷 Shell:"
+      "key": "├ Shell",
+      "keyColor": "yellow"
     },
     {
-      "type": "terminalfont",
-      "key": "{#separator}│  {#keys}󰛖 Font:"
+      "type": "command",
+      "key": "└ Age",
+      "keyColor": "yellow",
+      "text": "birth_install=$(stat -c %W /); current=$(date +%s); time_progression=$((current - birth_install)); days_difference=$((time_progression / 86400)); echo $days_difference days"
+    },
+    "break",
+    {
+      "type": "de",
+      "key": " DE",
+      "keyColor": "blue"
     },
     {
-      "type": "custom",
-      "format": "{#1}│"
+      "type": "wm",
+      "key": "├󰧨 Window Manager",
+      "keyColor": "blue"
     },
-    // Hardware Information
     {
-      "type": "custom",
-      "format": "{#1}│ {#}Hardware Information"
+      "type": "lm",
+      "key": "├󰧨 Login Manager",
+      "keyColor": "blue"
+    },
+    {
+      "type": "wmtheme",
+      "key": "├󰉼 WM Theme",
+      "keyColor": "blue"
+    },
+    {
+      "type": "theme",
+      "format": "{1}",
+      "key": "├󰉼 Color Themes",
+      "keyColor": "blue"
+    },
+    {
+      "type": "icons",
+      "format": "{1}",
+      "key": "├󰀻 System Icons",
+      "keyColor": "blue"
+    },
+    {
+      "type": "font",
+      "format": "{?1}{1} [Qt]{?}{/1}Unknown",
+      "key": "├ System Fonts",
+      "keyColor": "blue"
+    },
+    {
+      "type": "terminal",
+      "key": "└ Terminal",
+      "keyColor": "blue"
+    },
+    "break",
+    {
+      "type": "chassis",
+      "key": "󰌢 PC",
+      "keyColor": "green"
     },
     {
       "type": "cpu",
-      "key": "{#separator}│  {#keys}󰻠 CPU:"
+      "key": "├󰻠 CPU",
+      "keyColor": "green"
     },
     {
       "type": "gpu",
-      "key": "{#separator}│  {#keys}󰢮 GPU: "
+      "key": "├󰍛 GPU",
+      "keyColor": "green"
     },
     {
-      "type": "memory",
-      "key": "{#separator}│  {#keys}󰍛 Memory:"
+      "type": "opengl",
+      "key": "├󰍛 OpenGL",
+      "keyColor": "green"
     },
     {
-      "type": "disk",
-      "key": "{#separator}│  {#keys}󰋊 Disk (/): "
+      "type": "vulkan",
+      "key": "├󰍛 Vulkan",
+      "keyColor": "green"
     },
     {
-      "type": "custom",
-      "format": "{#1}│"
+      "type": "display",
+      "key": "└󰍹 Display(s)",
+      "keyColor": "green"
     },
-    // Colors
-    {
-      "type": "colors",
-      "key": "{#separator}│  {#keys}⚫ Colors:",
-      "symbol": "circle"
-    },
-    // Footer
-    {
-      "type": "custom",
-      "format": "{#1}╰──────────────────────────────────────────────╯"
-    }
   ]
 }
