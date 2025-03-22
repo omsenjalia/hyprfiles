@@ -88,6 +88,11 @@ source install/includes/copy.sh
 source install/includes/getwalls.sh
 
 # ----------------------------------------------------- 
+# Symlinks
+# ----------------------------------------------------- 
+source install/includes/links.sh
+
+# ----------------------------------------------------- 
 # Reboot
 # ----------------------------------------------------- 
 source install/includes/reboot.sh
